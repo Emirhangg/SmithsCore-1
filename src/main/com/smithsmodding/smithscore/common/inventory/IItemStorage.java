@@ -101,7 +101,8 @@ public interface IItemStorage extends IWorldNameable {
         }
 
         @Override
-        public boolean isUseableByPlayer(EntityPlayer player) {
+        public boolean isUsableByPlayer(final EntityPlayer player)
+        {
             return true;
         }
 

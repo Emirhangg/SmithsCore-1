@@ -1,9 +1,18 @@
-This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril.
-
 Cannot run the CurseUpload sequence. No API-Key or release type has been provided.Cannot run the CurseUpload sequence. No API-Key or release type has been provided.
 
+#################################################
+         ForgeGradle 2.2-SNAPSHOT-7f5a769        
+  https://github.com/MinecraftForge/ForgeGradle  
+#################################################
+               Powered by MCP unknown               
+             http://modcoderpack.com             
+         by: Searge, ProfMobius, Fesh0r,         
+         R4wk, ZeuX, IngisKahn, bspkrs           
+#################################################
 Found AccessTransformer: jei_at.cfg_jei_1.10.2-3.7.12.239_at.cfg
+Found AccessTransformer: SmithsCore_at.cfg
+:genIntellijRuns
 
 BUILD SUCCESSFUL
 
-Total time: 2.134 secs
+Total time: 4.857 secs

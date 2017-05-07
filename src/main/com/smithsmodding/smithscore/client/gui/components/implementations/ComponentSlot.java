@@ -11,6 +11,8 @@ import com.smithsmodding.smithscore.util.common.positioning.Coordinate2D;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.inventory.Slot;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * Created by Marc on 22.12.2015.
@@ -19,7 +21,7 @@ public class ComponentSlot extends CoreComponent {
     private MinecraftColor color;
 
     public ComponentSlot (String uniqueID, SlotComponentState state, IGUIBasedComponentHost parent, Slot connectedSlot, MinecraftColor color) {
-        this(uniqueID, state, parent, new Coordinate2D(connectedSlot.xDisplayPosition - 1, connectedSlot.yDisplayPosition - 1 - parent.getRootGuiObject().getDefaultDisplayVerticalOffset()), color);
+        this(uniqueID, state, parent, new Coordinate2D(connectedSlot.xPos - 1, connectedSlot.yPos - 1 - parent.getRootGuiObject().getDefaultDisplayVerticalOffset()), color);
     }
 
     public ComponentSlot (String uniqueID, SlotComponentState state, IGUIBasedComponentHost parent, Coordinate2D rootAnchorPixel, MinecraftColor color) {
@@ -40,6 +42,7 @@ public class ComponentSlot extends CoreComponent {
         //NOOP
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public void drawBackground (int mouseX, int mouseY) {
         GlStateManager.pushMatrix();
